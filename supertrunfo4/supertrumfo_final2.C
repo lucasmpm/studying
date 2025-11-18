@@ -84,7 +84,7 @@ int main() {
     printf("Pontos Turísticos: ");
     scanf("%d", &pontos2);
 
-    // ---------- Cálculos (sem if) ----------
+    // ---------- Cálculos ----------
     densidade1 = (float)populacao1 / area1;
     densidade2 = (float)populacao2 / area2;
 
@@ -99,7 +99,7 @@ int main() {
     superpoder1 = (float)populacao1 + area1 + (pib1 * 1e9f) + (float)pontos1 + pib_percapita1 + inv_dens1;
     superpoder2 = (float)populacao2 + area2 + (pib2 * 1e9f) + (float)pontos2 + pib_percapita2 + inv_dens2;
 
-    // ---------- Comparações sem if ----------
+    // ---------- Comparações ----------
     // Só usando comparação direta que retorna 0 ou 1
     int cmp_pop   = (populacao1 > populacao2);
     int cmp_area  = (area1 > area2);
